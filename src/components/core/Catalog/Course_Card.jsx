@@ -57,7 +57,12 @@ function Course_Card({ course, Height }) {
             />
           </div>
           <div className="flex flex-col gap-2 px-1 py-3">
-            <p className="text-sm text-richblack-50">{user.firstName} {user.lastName}</p>
+            <figcaption class="flex items-center ">
+              <img class="aspect-square w-[30px] rounded-full object-cover" src={user?.image} alt={`profile-${user?.firstName}`}/>
+              <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                < div class="text-sm text-gray-500 dark:text-gray-400 ">{user.firstName} {user.lastName}</div>
+              </div>
+            </figcaption>
             <p className="text-xl text-yellow-5">{course?.courseName}</p>
             <p className="text-sm text-richblack-50">
               Skills you will gain : {course.whatYouWillLearn}
