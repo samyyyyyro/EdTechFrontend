@@ -13,14 +13,20 @@ const Footer = () => {
         <div className="w-full flex flex-col items-center pb-5">
           <img src={Logo} alt="Logo" className="object-contain mb-4" />
           <div className="flex gap-3 mb-4">
-            {["About", "Catalog"].map((ele, i) => (
+            {/* {["About", "Catalog"].map((ele, i) => (
               <div
                 key={i}
                 className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200"
               >
                 <Link to={ele.toLowerCase()}>{ele}</Link>
               </div>
-            ))}
+            ))} */}
+            <div className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200">
+              <Link to="/about">About</Link>
+            </div>
+            <div className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200">
+              <Link to="/catalog/python">Catalog</Link>
+            </div>
           </div>
           <hr className="w-full border-richblack-700" />
         </div>
