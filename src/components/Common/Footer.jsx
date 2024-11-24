@@ -51,7 +51,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="text-center">Made with ❤️ Samyak © CourseForge</div>
+          <div className="text-center">Made with ❤️ Kunal © CourseForge</div>
         </div>
       </div>
     </div>
